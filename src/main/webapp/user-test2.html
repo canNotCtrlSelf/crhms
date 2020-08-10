@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>user-test</title>
+        <link type="text/css" href="plugins/jquery-datatimepicker/jquery.datetimepicker.css" rel="stylesheet"/>
+        <script type="text/javascript" src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script type="text/javascript" src="plugins/jquery-datatimepicker/jquery.datetimepicker.js"></script>
+        <script>
+            $(function () {
+                $('#datetimepicker').datetimepicker({
+                    format: 'Y-m-d',
+                    timepicker: false
+                });
+            })
+        </script>
+    </head>
+    <body>
+        <!--div比table大小要小才会显示-->
+        <div style="overflow-x: auto; overflow-y: auto; height: 100px; width:200px;">
+            <table id="table" border="1" align="center" width="300px" height="200px">
+                <tbody>
+                    <tr><td>00</td><td>01</td><td>02</td><td>03</td><td>04</td><td>05</td></tr>
+                    <tr><td>10</td><td>11</td><td>12</td><td>13</td><td>15</td><td>15</td></tr>
+                    <tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
+                    <tr><td>30</td><td>31</td><td>32</td><td>33</td><td>34</td><td>35</td></tr>
+                </tbody>
+            </table>
+    </div>
+        <input id="datetimepicker" type="text">
+        <input type="radio" name="healthAssessList[0]" value="4">&lt;22:00</br>
+        <input type="radio" name="healthAssessList[0]" value="3">22:00-23:00</br>
+        <input type="radio" name="healthAssessList[0]" value="2">23:00-0:00</br>
+        <input type="radio" name="healthAssessList[0]" value="1">&gt;0:00
+    </body>
+</html>

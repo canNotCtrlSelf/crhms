@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport"> -->
+		<title>社区居民健康管理首页</title>
+		<link rel="stylesheet" type="text/css" href="../plugins/bootstrap/css/bootstrap-3.3.7.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/regist.css" />
+		<link rel="stylesheet" type="text/css" href="../css/navbar.css" />
+		<link rel="stylesheet" type="text/css" href="../css/custom_style.css" />
+	</head>
+
+	<body class="custom-body">
+		<!-- Fixed navbar -->
+		<nav class="navbar-default navbar-fixed-top">
+			<div class="row custom-font-medium custom-font-color">
+				<div class="navbar-header col-lg-3">
+					<a class="navbar-brand custom-font-large" href="#">社区居民健康管理系统</a>
+				</div>
+				<div class="col-lg-6">
+						<ul class=" custom-list-style">
+							<a style="color: #01FF70"  href="#"><li class="col-lg-2 custom-li-style">首页</li></a>
+							<a href="#"><li class="col-lg-2 custom-li-style">健康服务</li></a>
+							<a href="#"><li class="col-lg-2 custom-li-style">健康检测</li></a>
+							<a href="#"><li class="col-lg-2 custom-li-style">特殊人群</li></a>
+							<a href="#"><li class="col-lg-2 custom-li-style">健康档案</li></a>
+							<a href="#"><li class="col-lg-2 custom-li-style">在线医生</li></a>
+						</ul>
+				</div>
+				<div class="col-lg-3 text-center">
+					<span class="custom-li-style"><a href="#">注册</a></span>
+					<span class="custom-li-style"><a href="#">登录</a></span>
+				</div>
+			</div>
+
+		</nav>
+		<!-- Fixed navbar -->
+		<div class="container" style="margin-top: 200px;">
+			<div class="carousel slide"  id="slidershow" data-ride="carousel" data-interval="2000">
+				<!--计数器-->
+				<ol class="carousel-indicators">
+					<li class="active" data-target="#slidershow" data-slide-to="0"></li>
+					<li data-target="#slidershow" data-slide-to="1"></li>
+					<li data-target="#slidershow" data-slide-to="2"></li>
+				</ol>
+				<!--图片容器-->
+				<div class="carousel-inner" style="height: 500px;width: 100%;">
+					<div class="item active">
+						<img src="../img/resident-index-1.jpg"/>
+						<!--添加对应标题和内容-->
+						<div class="carousel-caption">
+							<h4>图一</h4>
+							<span>内容</span>
+						</div>
+					</div>
+					<div class="item">
+						<img src="../img/resident-index-2.jpg"/>
+						<!--添加对应标题和内容-->
+						<div class="carousel-caption">
+							<h4>图二</h4>
+						</div>
+					</div>
+					<div class="item">
+						<img src="../img/resident-index-3.jpg"/>
+						<!--添加对应标题和内容-->
+						<div class="carousel-caption">
+							<h4>图三</h4>
+						</div>
+					</div>
+					<!--轮播导航-->
+					<a href="#slidershow" data-slide="prev" class="left carousel-control" role="button">
+						<!-- <img src="assets/left1.png"/> -->
+						 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					</a>
+					<a href="#slidershow" data-slide="next" class="right carousel-control" role="button">
+						<!-- <img src="assets/right.png"/> -->
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- javascript文件放在最后引入,加快页面加载速度. -->
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="../plugins/jQuery/jquery-3.3.1.min.js"></script>
+		<!-- jQuery validate表单验证插件 -->
+		<script type="text/javascript" src="../plugins/jQuery-validate/jquery.validate.min.js"></script>
+		<!-- jQuery validate中文信息提示包 -->
+		<script type="text/javascript" src="../plugins/jQuery-validate/messages_zh.js"></script>
+		<!-- jQuery validate自定义校验规则与提示信息 -->
+		<script src="../js/regist/regist_start.js"></script>
+	</body>
+
+</html>

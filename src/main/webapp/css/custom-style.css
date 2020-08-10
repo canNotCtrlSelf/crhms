@@ -1,0 +1,150 @@
+/****************************************************** 覆盖bootstrap CSS样式 *********************************************/
+
+.control-label {
+	padding-top: 7px;
+	margin-bottom: 0;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #21d196;
+	border-color: #21d196;
+}
+
+.custom-body {
+	background-color: #fff;
+	font-size: 14px;
+}
+
+.error {
+	color: red;
+}
+
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 3px;
+	padding-left: 15px;
+}
+
+
+/****************************************************** 自定义系统默认CSS样式 *********************************************/
+
+.custom-panel {
+	margin-top: 100px;
+	padding: 20px;
+	box-shadow: 0 0 3px 2px #d6d6d6;
+	border-radius: 5px 5px;
+	/* border: #797979 solid 2px; */
+	/* background-color: #fff; */
+}
+
+.custom-p{
+	font-size: 18px;
+}
+
+.custom-a {
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.custom-hr {
+	border-width: medium;
+}
+
+.custom-font-large {
+	font-size: 20px;
+}
+.custom-font-sm {
+	font-size: 13px;
+}
+
+.custom-font-medium {
+	font-size: 18px;
+}
+
+.custom-font-bold {
+	font-weight: 700;
+}
+
+
+.custom-text-align {
+	color: #0000FF;
+	text-align: justify;
+	text-justify: inter-ideograph;
+}
+
+.custom-font-color {
+	color: #fff;
+}
+
+.custom-default-bgcolor {
+	background-color: #21D196;
+}
+
+.custom-list-style {
+	list-style-type: none
+}
+
+.custom-carousel {
+	width: 904px;
+	height: 546px;
+	margin: 0 auto;
+}
+
+/****************************************************** 自定义工具样式 *********************************************/
+.clear-float {
+	clear: both;
+}
+
+/* div{
+	border: 1px solid red;
+} */

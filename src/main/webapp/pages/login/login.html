@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport"> -->
+		<title>用户登录</title>
+		<link rel="stylesheet" type="text/css" href="../../plugins/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/custom-navbar.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/custom-style.css" />
+	</head>
+	<body class="custom-body" onkeydown="keyLogin();">
+		<!-- Fixed navbar -->
+		<div class="custom-header-navbar">
+			<h1>社区居民健康管理系统</h1>
+			<h1>Community Resident Health Management System</h1>
+		</div>
+		<!-- Fixed navbar -->
+		<div class="container" style="margin-top: 200px;">
+			<div class="row">
+				<!-- 注册主体面板 begin -->
+				<div class="col-xs-offset-3 col-xs-6 custom-panel" style="margin-top: 0;height: 300px;">
+					<h2 style="font-weight: 700;text-align: center;margin-top: 0;">
+						用户登录
+					</h2>
+					<form class="form-horizontal" id="loginForm" role="form">
+						<div class="form-group">
+							<label class="col-xs-1 control-label">
+								<span class="glyphicon glyphicon-user"></span>
+							</label>
+							<div class="col-xs-6">
+								<input type="text" class="form-control" placeholder="用户名" id="username" name="username">
+							</div>
+							<div class="col-xs-4">
+								<select  name="role_id" class="form-control" id="user-role">
+									<option value="">用户类型</option>
+									<option value="1">居民</option>
+									<option value="2">医生</option>
+									<option value="3">健康管理师</option>
+									<option value="4">社区健康管理员</option>
+									<option value="5">管理员</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-xs-1 control-label">
+								<span class="glyphicon  glyphicon-lock"></span>
+							</label>
+							<div class="col-xs-10">
+								<input type="password" class="form-control"  placeholder="密码" id="password" name="password">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-xs-1 control-label">
+								<span class="glyphicon glyphicon-qrcode"></span>
+							</label>
+							<div class="col-xs-6">
+								<input type="text" class="form-control"  placeholder="验证码" id="verifyCode" name="verifyCode">
+							</div>
+							<div class="col-xs-4">
+								<img src="/crhms/userRegister/getVerifyCode.img" id="authCode" onclick="changeVerifyCode()" alt="验证码" style="cursor: pointer">
+								<a onclick="changeVerifyCode()" style="cursor: pointer">换一张</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-7">
+								<a href="../register/signup-start.jsp" style="line-height: 34px;" class="col-xs-offset-2">没有账号，现在就去注册</a>
+							</div>
+							<div class="col-xs-4">
+								<button type="button" onclick="submitOnHand()" class="btn btn-block btn-success btn-flat">登录</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- 注册主体面板 end -->
+			</div>
+		</div>
+		<!-- javascript文件放在最后引入,加快页面加载速度. -->
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="../../plugins/jQuery/jquery-3.3.1.min.js"></script>
+		<!-- jQuery validate表单验证插件 -->
+		<script src="../../plugins/jQuery-validate/jquery.validate.min.js"></script>
+		<!-- jQuery validate中文信息提示包 -->
+		<script src="../../plugins/jQuery-validate/messages_zh.js"></script>
+		<!-- jQuery validate自定义校验规则与提示信息 -->
+		<script src="../../js/login/login.js"></script>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+/****************************************************** 自定义公共使用样式 *********************************************/
+
+
+.custom-register-title {
+	font-weight: 700;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.progress {
+	margin-bottom: 19px;
+}
+
+
+/* div {
+	border: 1px solid #21D196;
+} */
+
+/****************************************************** regist_step1.html使用样式 *********************************************/
+
+.custom-register-sm-progress-li {
+	width: 80px;
+	height: 20px;
+	float: left;
+}
+
+.custom-register-lg-progress-li {
+	width: 145px;
+	height: 20px;
+	float: left;
+}
+
+.custom-register-xlg-progress-li {
+	width: 298px;
+	height: 20px;
+	float: left;
+}
+
+
+/* .custom-register-progress-div {
+	width: 930px;
+	height: 20px;
+} */
+
+
+.custom-progress-lg-width {
+	height: 20px;
+	width: 900px;
+	margin-left: 40px;
+}
+
+/* .glyphicon{
+	line-height: 2;
+} */
+/****************************************************** register-f.html使用样式 *********************************************/
+/*#family-info input{
+	background-color: transparent;
+	border: none;
+	overflow: hidden;
+	height: 30px;
+	width: 100%;
+}*/
+
+
+/****************************************************** regist_step2_doctor.html使用样式 *********************************************/
